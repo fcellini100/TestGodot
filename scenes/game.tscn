@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://n4bimuetomei"]
+
+[ext_resource type="PackedScene" uid="uid://due4nfit5mqtp" path="res://scenes/player.tscn" id="1_anwse"]
+[ext_resource type="Texture2D" uid="uid://bch8idybpjcgv" path="res://assets/bg.png" id="1_lepv2"]
+
+[node name="Game" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_anwse")]
+position = Vector2(191, 126)
+collision_mask = 2
+
+[node name="Bg" type="Sprite2D" parent="."]
+show_behind_parent = true
+z_index = -1
+position = Vector2(533, 462)
+texture = ExtResource("1_lepv2")
